@@ -1,0 +1,101 @@
+:root {
+  --color-primario: #6f4e37;
+  --color-acento: #d9822b;
+  --color-texto: #2b2b2b;
+  --color-fondo: #f6efe6;
+
+  --bs-primary: var(--color-primario);
+  --bs-primary-rgb: 111, 78, 55;
+  --bs-secondary: var(--color-acento);
+  --bs-secondary-rgb: 217, 130, 43;
+  --bs-body-color: var(--color-texto);
+  --bs-body-bg: var(--color-fondo);
+  --bs-body-font-family: "Poppins", sans-serif;
+  --bs-link-color: var(--color-primario);
+  --bs-link-color-rgb: 111, 78, 55;
+  --bs-link-hover-color: var(--color-acento);
+  --bs-link-hover-color-rgb: 217, 130, 43;
+  --bs-border-color: #e7ddd0;
+}
+
+body {
+  color: var(--color-texto);
+  background-color: var(--color-fondo);
+}
+
+h2,
+h3 {
+  color: var(--color-primario);
+}
+
+header .navbar {
+  min-height: 5.5rem;
+  padding: 0.5rem 1.25rem;
+}
+
+header h1 {
+  margin-bottom: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+header .nav-link {
+  color: #fff;
+  font-weight: 600;
+}
+
+header .nav-link:hover,
+header .nav-link.active {
+  color: var(--color-acento);
+}
+
+#servicios article {
+  border-color: var(--bs-border-color) !important;
+  border-radius: 0.5rem !important;
+  box-shadow: 0 2px 6px rgba(var(--bs-primary-rgb), 0.12);
+}
+
+#servicios article img {
+  width: 100%;
+  max-height: 12rem;
+  object-fit: cover;
+}
+
+.btn-primary {
+  --bs-btn-color: var(--color-primario);
+  --bs-btn-bg: transparent;
+  --bs-btn-border-color: var(--color-primario);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: var(--color-primario);
+  --bs-btn-hover-border-color: var(--color-primario);
+  --bs-btn-focus-shadow-rgb: var(--bs-primary-rgb);
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: var(--color-primario);
+  --bs-btn-active-border-color: var(--color-primario);
+  --bs-btn-disabled-color: var(--color-primario);
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: var(--color-primario);
+}
+
+.form-control:focus {
+  border-color: var(--color-acento);
+  box-shadow: 0 0 0 0.25rem rgba(var(--bs-secondary-rgb), 0.2);
+}
+
+.modal-content {
+  border-color: var(--bs-border-color);
+  border-radius: 0.75rem;
+}
+
+.modal-header,
+.modal-footer {
+  border-color: var(--bs-border-color);
+}
+
+footer .bg-primary {
+  color: #fff;
+}
+
+footer p {
+  margin-bottom: 0;
+}

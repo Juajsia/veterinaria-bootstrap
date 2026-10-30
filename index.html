@@ -1,162 +1,228 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Veterianria - Booststrap</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles.css">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<body>
-
+  <body>
     <header>
-        <div class="container-fluid bg-primary text-white">
-            <nav class="navbar">
-                <div class="d-flex align-items-center">
-                    <img src="img/logo.png" alt="logo de la compañía de un golden con la palabra pet-shop" width="120px"
-                        class="logo" />
-                    <h1>Veterinaria | Petshop</h1>
-                </div>
+      <div class="container-fluid bg-primary text-white">
+        <nav class="navbar">
+          <div class="d-flex align-items-center">
+            <img
+              src="img/logo.png"
+              alt="logo de la compañía de un golden con la palabra pet-shop"
+              width="120px"
+              class="logo"
+            />
+            <h1>Veterinaria | Petshop</h1>
+          </div>
 
-                <ul class="d-flex list-unstyled">
-                    <li class="nav-item mx-3"><a href="" class="nav-link active">Inicio</a></li>
-                    <li class="nav-item mx-3"><a href="#servicios" class="nav-link">Servicios</a></li>
-                    <li class="nav-item mx-3"><a href="#contacto" class="nav-link">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
+          <ul class="d-flex list-unstyled">
+            <li class="nav-item mx-3">
+              <a href="" class="nav-link active">Inicio</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a href="#servicios" class="nav-link">Servicios</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a href="#contacto" class="nav-link">Contacto</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <section class="container-fluid py-5 mb-5">
-        <div class="row">
-            <article class="col-12 text-center">
-                <h2>Bienvenido a nuestra Veterinaria</h2>
-                <p>Ofrecemos servicios de calidad para tu mascota.</p>
-                <p>
-                    Contamos con profesionales capacitados y equipos modernos para el
-                    bienestar de tu mascota.
-                </p>
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    Contactanos
-                </button>
-            </article>
-        </div>
-
+      <div class="row">
+        <article class="col-12 text-center">
+          <h2>Bienvenido a nuestra Veterinaria</h2>
+          <p>Ofrecemos servicios de calidad para tu mascota.</p>
+          <p>
+            Contamos con profesionales capacitados y equipos modernos para el
+            bienestar de tu mascota.
+          </p>
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            Contactanos
+          </button>
+        </article>
+      </div>
     </section>
 
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Contactanos</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    Puedes ponerte en contacto con nosotros en cualquier momento. Tenemos servicio 24h
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    <a href="#contacto" class="btn btn-primary">Ir al formulario</a>
-                </div>
-            </div>
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Contactanos</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            Puedes ponerte en contacto con nosotros en cualquier momento.
+            Tenemos servicio 24h
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cerrar
+            </button>
+            <a href="#contacto" class="btn btn-primary">Ir al formulario</a>
+          </div>
         </div>
+      </div>
     </div>
 
     <section class="container-fluid" id="servicios">
-        <h2 class="text-center">Servicios Destacados</h2>
-        <div class="row g-4 mb-5">
-            <div class="col-12 col-md-6 col-lg-3">
-                <article class="h-100 p-4 border rounded bg-white">
-                    <img class="img-fluid rounded" src="./img/veterinario.jpg"
-                        alt="dos Veterinarios atendiendo a un perro" />
-                    <h3 class="h5 fw-semibold my-3">Consulta Veterinaria</h3>
-                    <p class="mb-2">Nuestro equipo de veterinarios altamente capacitados está listo para
-                        brindar atención médica de calidad a tu mascota. Realizamos
-                        consultas, diagnósticos y tratamientos personalizados para asegurar
-                        la salud y el bienestar de tu compañero peludo.</p>
-                </article>
-            </div>
-
-            <div class="col-12 col-md-6 col-lg-3">
-                <article class="h-100 p-4 border rounded bg-white">
-                    <img class="img-fluid rounded" src="./img/vacunacion-gato.png"
-                        alt="Veterinario aplicando vacuna a un gato" />
-                    <h3 class="h5 fw-semibold my-3">Vacunación</h3>
-                    <p class="mb-2">Protege a tu mascota contra enfermedades mediante nuestro servicio
-                        de vacunación. Contamos con un calendario de vacunación completo y
-                        seguro para mantener a tu mascota saludable y protegida.</p>
-                </article>
-            </div>
-
-            <div class="col-12 col-md-6 col-lg-3">
-                <article class="h-100 p-4 border rounded bg-white">
-                    <img class="img-fluid rounded" src="./img/peluqueria-perro.jpg"
-                        alt="un perro que acaba de recibir un corte de pelo" />
-                    <h3 class="h5 fw-semibold my-3">Baño y Peluquería</h3>
-                    <p class="mb-2">Mima a tu mascota con nuestro servicio de baño y peluquería. Nuestro
-                        personal capacitado se encargará de mantener a tu mascota limpia,
-                        arreglada y feliz.</p>
-                </article>
-            </div>
-
-            <div class="col-12 col-md-6 col-lg-3">
-                <article class="h-100 p-4 border rounded bg-white">
-                    <img class="img-fluid rounded" src="./img/accesorios-de-mascotas.jpg"
-                        alt="varios productos de alimentos y accesorios para mascotas" />
-                    <h3 class="h5 fw-semibold my-3">Venta de Alimentos y Accesorios</h3>
-                    <p class="mb-2"> Encuentra una amplia variedad de alimentos y accesorios para tu
-                        mascota en nuestra tienda. Ofrecemos productos de alta calidad para
-                        satisfacer las necesidades de tu compañero peludo.</p>
-                </article>
-            </div>
-
-
+      <h2 class="text-center">Servicios Destacados</h2>
+      <div class="row g-4 mb-5">
+        <div class="col-12 col-md-6 col-lg-3">
+          <article class="h-100 p-4 border rounded bg-white">
+            <img
+              class="img-fluid rounded"
+              src="./img/veterinario.jpg"
+              alt="dos Veterinarios atendiendo a un perro"
+            />
+            <h3 class="h5 fw-semibold my-3">Consulta Veterinaria</h3>
+            <p class="mb-2">
+              Nuestro equipo de veterinarios altamente capacitados está listo
+              para brindar atención médica de calidad a tu mascota. Realizamos
+              consultas, diagnósticos y tratamientos personalizados para
+              asegurar la salud y el bienestar de tu compañero peludo.
+            </p>
+          </article>
         </div>
 
+        <div class="col-12 col-md-6 col-lg-3">
+          <article class="h-100 p-4 border rounded bg-white">
+            <img
+              class="img-fluid rounded"
+              src="./img/vacunacion-gato.png"
+              alt="Veterinario aplicando vacuna a un gato"
+            />
+            <h3 class="h5 fw-semibold my-3">Vacunación</h3>
+            <p class="mb-2">
+              Protege a tu mascota contra enfermedades mediante nuestro servicio
+              de vacunación. Contamos con un calendario de vacunación completo y
+              seguro para mantener a tu mascota saludable y protegida.
+            </p>
+          </article>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3">
+          <article class="h-100 p-4 border rounded bg-white">
+            <img
+              class="img-fluid rounded"
+              src="./img/peluqueria-perro.jpg"
+              alt="un perro que acaba de recibir un corte de pelo"
+            />
+            <h3 class="h5 fw-semibold my-3">Baño y Peluquería</h3>
+            <p class="mb-2">
+              Mima a tu mascota con nuestro servicio de baño y peluquería.
+              Nuestro personal capacitado se encargará de mantener a tu mascota
+              limpia, arreglada y feliz.
+            </p>
+          </article>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3">
+          <article class="h-100 p-4 border rounded bg-white">
+            <img
+              class="img-fluid rounded"
+              src="./img/accesorios-de-mascotas.jpg"
+              alt="varios productos de alimentos y accesorios para mascotas"
+            />
+            <h3 class="h5 fw-semibold my-3">Venta de Alimentos y Accesorios</h3>
+            <p class="mb-2">
+              Encuentra una amplia variedad de alimentos y accesorios para tu
+              mascota en nuestra tienda. Ofrecemos productos de alta calidad
+              para satisfacer las necesidades de tu compañero peludo.
+            </p>
+          </article>
+        </div>
+      </div>
     </section>
 
     <section class="container-fluid text-center" id="contacto">
-        <h2>Contactanos</h2>
-        <p>¿Tienes alguna pregunta o necesitas más información?</p>
-        <p><strong>¡No dudes en contactarnos!</strong></p>
+      <h2>Contactanos</h2>
+      <p>¿Tienes alguna pregunta o necesitas más información?</p>
+      <p><strong>¡No dudes en contactarnos!</strong></p>
 
-        <div class="row d-flex align-items-center justify-content-center pb-5">
-            <div class="col-12 col-md-6 col-lg-4">
-                <form>
-                    <div class="mb-3">
-                        <label for="nombre" class="form-label">Nombre</label>
-                        <input type="text" class="form-control" id="nombre" placeholder="Escribe tu nombre" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="correo" class="form-label">Correo electrónico</label>
-                        <input type="email" class="form-control" id="correo" placeholder="nombre@ejemplo.com" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="mensaje" class="form-label">Mensaje</label>
-                        <textarea class="form-control" id="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..."
-                            required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Enviar</button>
-                </form>
+      <div class="row d-flex align-items-center justify-content-center pb-5">
+        <div class="col-12 col-md-6 col-lg-4">
+          <form>
+            <div class="mb-3">
+              <label for="nombre" class="form-label">Nombre</label>
+              <input
+                type="text"
+                class="form-control"
+                id="nombre"
+                placeholder="Escribe tu nombre"
+                required
+              />
             </div>
+            <div class="mb-3">
+              <label for="correo" class="form-label">Correo electrónico</label>
+              <input
+                type="email"
+                class="form-control"
+                id="correo"
+                placeholder="nombre@ejemplo.com"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="mensaje" class="form-label">Mensaje</label>
+              <textarea
+                class="form-control"
+                id="mensaje"
+                rows="4"
+                placeholder="Escribe tu mensaje aquí..."
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </form>
         </div>
-
+      </div>
     </section>
 
     <div class="container-fluid">
-        <footer>
-            <div class="row text-center">
-                <div class="col-12">
-                    <p>&copy; 2026 Veterinaria | Petshop. Todos los derechos reservados.</p>
-                </div>
-            </div>
-            <p></p>
-        </footer>
+      <footer>
+        <div class="row text-center p-5 bg-primary">
+          <div class="col-12">
+            <p>
+              &copy; 2026 Veterinaria | Petshop. Todos los derechos reservados.
+            </p>
+          </div>
+        </div>
+      </footer>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-
+  </body>
 </html>
